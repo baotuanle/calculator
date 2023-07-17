@@ -1,0 +1,90 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1rem solid #36454F;
+    max-width: 400px; 
+    margin: 5rem auto; 
+    align-items: center;
+}
+
+.display {
+    max-width: 400px;
+    font-size: 52px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    border: 1px solid #ccc;
+    height: 150px;
+    box-sizing: border-box; 
+    overflow-x: auto;
+    white-space: nowrap; 
+    padding: 10px;
+    border-top: none;
+  }
+
+  .history {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    width: 100%; 
+    border: 1px solid #ccc; 
+    overflow-x: auto;
+    border-bottom: none;
+    height: 40px; 
+  }
+
+  .input_button:disabled {
+    opacity: 1;
+    cursor: default;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+.number_button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.other_button {
+    height: 90px;
+    width: 100%;
+    grid-column: span 2;
+    background-color: #F45B69;
+    border-color: #F45B69;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input_button {
+    height: 90px;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input_button:hover, .other_button:hover, .input_button:disabled:hover {
+    background-color: hsl(0, 0%, 80%); 
+    opacity: 0.6;
+    
+} 
+
+.other_button, .input_button {
+    font-size: 40px;
+}
